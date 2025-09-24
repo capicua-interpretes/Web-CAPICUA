@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CAPICUA intérpretes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <header>
+      <nav class="navbar" id="navbar">
+      <div class="nav-left">
+        <a href="/web-capicua" class="nav-home">
+          <img src="images/solido.svg" alt="Inicio"/>
+          <span class="nav-title">
+            <span class="nav-title-bold">CAPICUA</span><br />
+            <span class="nav-title-small">intérpretes</span>
+          </span>
+        </a>
+      </div>
+      <button class="nav-hamburger" onclick="toggleNav()" aria-label="Abrir menú">
+        <span class="nav-hamburger-bar"></span>
+        <span class="nav-hamburger-bar"></span>
+        <span class="nav-hamburger-bar"></span>
+      </button>
+      <ul class="nav-links nav-right">
+        <li class="dropdown">
+          <a href="#">Quiénes somos</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">La asociación</a></li>
+            <li><a href="#">El equipo</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">Qué hacemos</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Prácticas</a></li>
+            <li><a href="#">Talleres</a></li>
+            <li><a href="#">Actividades</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Recursos</a></li>
+        <li><a href="faq.html">Dudas frecuentes</a></li>
+        <li><a href="#">Iniciar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="contenido">
+    <section class="hero">
+      <div class="hero-message">
+  <p class="hero-desc"><span class="typewriter" id="typewriter1"></span></p>
+  <p class="hero-desc"><span class="typewriter" id="typewriter2"></span></p>
+  <p class="hero-title"><span class="typewriter" id="typewriter3"></span></p>
+  <p class="hero-desc"><span class="typewriter" id="typewriter4"></span></p>
+  <a href="#" class="button pop-in" id="hero-btn">Saber más</a>
+      </div>
+      <div class="hero-image pop-in">
+  <img src="images/hero.png" id="hero-img" />
+      </div>
+    </section>
+    <section class="about-section animate-on-scroll">
+      <div class="about-container">
+        <h2>Quiénes somos</h2>
+        <p class="about-desc">CAPICUA intérpretes es una comunidad dedicada a la formación, práctica y apoyo entre intérpretes de conferencias. Nuestra misión es fomentar la colaboración, el aprendizaje y el crecimiento profesional en un entorno abierto y solidario. Descubre quiénes somos, cómo trabajamos y por qué creemos que juntas llegamos más lejos.</p>
+      </div>
+    </section>
+    <section class="figures-section animate-on-scroll">
+      <div class="figures-row">
+        <div class="figure-col">
+            <span class="figure-number" id="figure-num-1">0</span>
+          <p>Miembros</p>
+        </div>
+        <div class="figure-col">
+            <span class="figure-number" id="figure-num-2">0</span>
+          <p>Universidades</p>
+        </div>
+        <div class="figure-col">
+            <span class="figure-number" id="figure-num-3">0</span>
+          <p>Países</p>
+        </div>
+      </div>
+    </section>    
+    <section class="links-section">
+  <h2>Qué hacemos</h2>
+  <p>(Además de lanzar patos de goma)</p>
+      <div class="links-images">
+        <a href="#" class="link-card">
+          <div class="card-image pop-in">
+            <img src="images/link1.png" class="card-img link-img" id="link-img-1" />
+            <span class="card-text card-overlay link-label" id="link-label-1">Prácticas</span>
+          </div>
+        </a>
+        <a href="#" class="link-card">
+          <div class="card-image  pop-in">
+            <img src="images/link2.png" class="card-img link-img" id="link-img-2" />
+            <span class="card-text card-overlay link-label" id="link-label-2">Talleres</span>
+          </div>
+        </a>
+        <a href="#" class="link-card">
+          <div class="card-image pop-in">
+            <img src="images/link3.png" class="card-img link-img" id="link-img-3" />
+            <span class="card-text card-overlay link-label" id="link-label-3">Actividades</span>
+          </div>
+        </a>
+      </div>
+    </section> 
+    <section class="agenda-section animate-on-scroll">
+      <div class="agenda-flex">
+        <div class="agenda-header">
+          <h2>Agenda</h2>
+          <div class="agenda-header-row">
+            <a href="/agenda.html" class="agenda-viewall">Ver todo</a>
+            <span class="agenda-arrow">&#8594;</span>
+          </div>
+        </div>
+        <div class="agenda-cards" id="agenda-cards-container">
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+  <div class="cta-container">
+  <h2><span class="typewriter" id="typewriter-cta"></span></h2>
+    <a href="/form.html" class="button pop-in">¡Me apunto!</a>
+  </div>
+ </section>
+ <section class="faq-section animate-on-scroll">
+    <h2>Dudas frecuentes</h2>
+    <div class="faq-container">
+      <p>Nos suelen hacer muchas preguntas. Muchas. Así que hemos recogido a continuación las más habituales. Si aun así te quedas con ganas de más puedes acceder a la <a href="/faq.html">capiguía completa</a>.</p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" onclick="togglePanel(this)">¿Qué es CAPICUA?<span class="faq-toggle">+</span></button>
+        <div class="faq-answer">CAPICUA son las siglas de la Comunidad de Aprendizaje y Práctica de Interpretación de Conferencias de Uso Abierto. Es una asociación sin ánimo de lucro fundada para fomentar la cooperación dentro del sector y el empoderamiento laboral, especialmente de cara a los recién egresados.</div>
+      </div>
+      <div class="faq-separator"></div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="togglePanel(this)">¿Cómo puedo inscribirme?<span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Solo debes rellenar el formulario de inscripción. Te escribiremos por correo electrónico lo antes posible para procesarla.</div>
+      </div>
+      <div class="faq-separator"></div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="togglePanel(this)">¿Hay que abonar alguna cuota?<span class="faq-toggle">+</span></button>
+        <div class="faq-answer">No. Tanto la inscripción como la participación en las actividades de CAPICUA son gratuitas.</div>
+      </div>
+      <div class="faq-separator"></div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="togglePanel(this)">¿Qué requisitos debo cumplir para poder inscribirme?<span class="faq-toggle">+</span></button>
+        <div class="faq-answer">Estar en posesión de un título de Máster en Interpretación de Conferencias o similar; o haber cursado, al menos, 12 créditos ECTS de formación en interpretación de conferencias (será imprescindible que en los 12 créditos conste formación en interpretación simultánea); o haber realizado cursos de interpretación simultánea de, al menos, 100 horas; o justificar, al menos, 100 horas de trabajo en interpretación simultánea de conferencias; o haber aprobado algún examen de acreditación oficial para intérpretes.
+  </div>
+</div>
+    </div>
+  </section>
+</main>
+<footer class="footer">
+  <div class="footer-row footer-row2">
+    <a href="#" class="footer-social"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="footer-social"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="footer-social"><i class="fab fa-linkedin"></i></a>
+    <a href="#" class="footer-social"><i class="fa fa-envelope"></i></a>
+  </div>
+  <div class="footer-row footer-row3">
+    <span class="footer-copyright">© 2025 CAPICUA intérpretes. Todos los derechos reservados.</span>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

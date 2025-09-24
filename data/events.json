@@ -1,0 +1,79 @@
+[
+  {
+    "titulo": "Sesión de bienvenida",
+    "fecha": "2025-09-23T19:30",
+    "categoria": "Charla",
+    "enlace": "#",
+    "descripcion": "Te damos la bienvenida al nuevo curso y te explicamos el funcionamiento de la asociación."
+  },
+  {
+    "titulo": "Sesión de práctica español",
+    "fecha": "2025-09-29",
+    "categoria": "Práctica",
+    "enlace": "#",
+    "descripcion": "Sesión de práctica de interpretación del español a tu lengua extranjera."
+  },
+  {
+    "titulo": "Sesión de práctica francés",
+    "fecha": "2025-10-06",
+    "categoria": "Práctica",
+    "enlace": "#",
+    "descripcion": "Sesión de práctica de interpretación del francés al español."
+  },
+  {
+    "titulo": "Sesión de práctica gallego",
+    "fecha": "2025-10-06",
+    "categoria": "Práctica",
+    "enlace": "#",
+    "descripcion": "Sesión de práctica de interpretación del gallego al español."
+  },
+  {
+    "titulo": "Sesión de práctica alemán",
+    "fecha": "2025-10-13",
+    "categoria": "Práctica",
+    "enlace": "#",
+    "descripcion": "Sesión de práctica de interpretación del alemán al español."
+  },
+  {
+    "titulo": "Sesión de práctica catalán",
+    "fecha": "2025-10-13",
+    "categoria": "Práctica",
+    "enlace": "#",
+    "descripcion": "Sesión de práctica de interpretación del catalán al español."
+  },
+  {
+    "titulo": "Oposiciones CTIE",
+    "fecha": "2025-10-16",
+    "categoria": "Taller",
+    "enlace": "#",
+    "descripcion": "Charla informativa sobre las oposiciones al Cuerpo de Traductores e Intérpretes del Estado."
+  },
+  {
+    "titulo": "Sesión de práctica inglés",
+    "fecha": "2025-10-20",
+    "categoria": "Práctica",
+    "enlace": "#",
+    "descripcion": "Sesión de práctica de interpretación del inglés al español."
+  },
+  {
+    "titulo": "Sesión de práctica italiano",
+    "fecha": "2025-10-27",
+    "categoria": "Práctica",
+    "enlace": "#",
+    "descripcion": "Sesión de práctica de interpretación del italiano al español."
+  },
+  {
+    "titulo": "Sesión de práctica portugués",
+    "fecha": "2025-10-27",
+    "categoria": "Práctica",
+    "enlace": "#",
+    "descripcion": "Sesión de práctica de interpretación del portugués al español."
+  },
+  {
+    "titulo": "Sesión especial de otoño",
+    "fecha": "2025-11-03",
+    "categoria": "Práctica",
+    "enlace": "#",
+    "descripcion": "Sesión de práctica de interpretación con temática sorpresa."
+  }
+]
