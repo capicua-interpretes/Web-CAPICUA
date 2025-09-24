@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// === AGENDA ===
+// === AGENDA SECTION ===
  fetch('data/events.json')
   .then(response => response.json())
   .then(eventos => {
@@ -246,7 +246,7 @@ document.addEventListener("DOMContentLoaded", function () {
     agendaCards.forEach(card => agendaObserver.observe(card));
   });
 
-// === AGENDA ===
+// === AGENDA PAGE ===
 fetch('data/events.json')
   .then(response => response.json())
   .then(eventos => {

@@ -55,7 +55,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: linear-gradient(180deg, #edf2f7 0%, #f7fafc 100%);
+  background: linear-gradient(180deg, #edf2f7 0%, #ffff 100%);
   font-family: 'Barlow', sans-serif;
   color: #464646;
   margin: 0;
@@ -168,7 +168,9 @@ main > section {
 
 /* ---   DROPDOWN MENU   --- */
 .dropdown-menu {
-  display: none;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
   position: absolute;
   white-space: nowrap;
   left: 0;
@@ -180,7 +182,17 @@ main > section {
   min-width: 160px;
   list-style: none;
   z-index: 10;
+  pointer-events: none;
+  visibility: hidden;
 }
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+  visibility: visible;
+}
+
 .dropdown-menu li {
   margin: 0;
   padding: 0;
@@ -267,8 +279,8 @@ main > section {
   font-weight: 300;
   line-height: 1.6;
   margin-bottom: 0;
+  text-align: center;
 }
-
 /* ---   BUTTONS   --- */
 .button,
 .cta-link {
@@ -1657,8 +1669,8 @@ input[type="checkbox"]:checked::after {
 
 .agenda-title {
   font-family: 'Barlow', sans-serif;
-  font-size: 1.2em;
   font-weight: 500;
+  font-size: 1.2em;
   color: #464646;
   text-decoration: none;
 }
@@ -1749,4 +1761,49 @@ input[type="checkbox"]:checked::after {
     font-size: 0.9em;
     color: #555;
   }
+}
+
+/* ---   ABOUT PAGE   --- */
+.about-hero {
+  background: url('images/fondo2.png') center center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding-top: 3.5em;
+  padding-bottom: 3.7em;
+  font-size: 2.4em;
+  margin: 1em 0;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.about-hero h2 {
+  font-size: 2em;
+  font-family: 'DomaineDisplayBold', serif;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+
+.about-hero p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.9em;
+  font-weight: 300;
+  color: #d1d1d1;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.5;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4em 2em 6em 2em;
+  font-family: 'Barlow', sans-serif;
+  color: #464646;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.about-content p {
+  margin-bottom: 2.3em;
 }
